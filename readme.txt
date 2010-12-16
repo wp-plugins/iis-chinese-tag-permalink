@@ -1,5 +1,6 @@
 === IIS Chinese Tag Permalink  ===
 Contributors: bossma
+Donate link:http://blog.bossma.cn
 Tags: chinese tag, iis
 Requires at least: 3.0
 Tested up to: 3.0.2
@@ -31,4 +32,6 @@ Yes.With WordPress URL Rewrite.
 = 1.0 =
 * This is the first version.
 
+== Upgrade Notice ==
 
+== Screenshots ==
