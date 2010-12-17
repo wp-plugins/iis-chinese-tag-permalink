@@ -4,7 +4,7 @@ Donate link:http://blog.bossma.cn
 Tags: chinese tag, iis
 Requires at least: 3.0
 Tested up to: 3.0.2
-Stable tag: 1.0
+Stable tag: 1.1
 
 == Description ==
 
@@ -28,11 +28,15 @@ You can get it from "http://www.binaryfortress.com/wordpress-url-rewrite".
 Yes.With WordPress URL Rewrite.
 
 == Changelog ==
+= 1.1 =
+* Resolved:Some chinese tag can not match correctly still.
 
 = 1.0 =
 * This is the first version.
 
 == Upgrade Notice ==
+= 1.1 =
+Re-upload and cover.
 
 = 1.0 =
 This is the first version.
