@@ -2,21 +2,29 @@
 /*
 Plugin Name: IIS Chinese Tag Permalink
 Plugin URI: http://blog.bossma.cn/in-iis-wordpress-chinese-tag-permalinks-plugin/
-Description: in iis for wordpress chinese tag permalinks
+Description: In IIS, wordpress use Chinese Tag permalink 
 Author: BOSSMA.CN
 Author URI: http://blog.bossma.cn/
-Version: 1.0
+Version: 1.1
 */
 add_action('init', 'bossma_get_urf8_pathandurl');
 add_filter('get_pagenum_link','bossma_set_utf8_pagenumlink');
+add_action('parse_query','bossma_chinese_tag_encode');
 
-//for get all url
+//iis encoding the url with GBK,but wordpress with utf-8
 function bossma_get_urf8_pathandurl() {
- //if(isset($_SERVER['UNENCODED_URL'])){
- // $_SERVER['REQUEST_URI']=$_SERVER['UNENCODED_URL'];
- //}
- $_SERVER['PATH_INFO']=iconv("GBK","UTF-8",rawurldecode($_SERVER['PATH_INFO']));
- $_SERVER['REQUEST_URI']=iconv("GBK","UTF-8",rawurldecode($_SERVER['REQUEST_URI']));
+	$_SERVER['PATH_INFO']=iconv("GBK","UTF-8",$_SERVER['PATH_INFO']);
+	$_SERVER['REQUEST_URI']=iconv("GBK","UTF-8",$_SERVER['REQUEST_URI']);
+}
+
+//urlencode for chinese tag
+//sometimes preg_match can not match the chinese correctly 
+function bossma_chinese_tag_encode($query){
+	if(is_tag){
+		if($query->query_vars['tag']!=''){
+			$query->query_vars['tag']=urlencode($query->query_vars['tag']);
+		}
+	}
 }
 
 //for generate tag pagenum link
