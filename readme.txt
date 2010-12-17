@@ -34,4 +34,8 @@ Yes.With WordPress URL Rewrite.
 
 == Upgrade Notice ==
 
+= 1.0 =
+This is the first version.
+
 == Screenshots ==
+nothing
