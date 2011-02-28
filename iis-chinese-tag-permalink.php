@@ -5,7 +5,7 @@ Plugin URI: http://blog.bossma.cn/in-iis-wordpress-chinese-tag-permalinks-plugin
 Description: In IIS, wordpress use Chinese Tag permalink 
 Author: BOSSMA.CN
 Author URI: http://blog.bossma.cn/
-Version: 1.1
+Version: 1.2
 */
 add_action('init', 'bossma_get_urf8_pathandurl');
 add_filter('get_pagenum_link','bossma_set_utf8_pagenumlink');
