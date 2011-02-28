@@ -2,9 +2,9 @@
 Contributors: bossma
 Donate link:http://blog.bossma.cn
 Tags: chinese tag, iis
-Requires at least: 3.0
-Tested up to: 3.0.2
-Stable tag: 1.1
+Requires at least: 3.1
+Tested up to: 3.1
+Stable tag: 1.2
 
 == Description ==
 
@@ -28,6 +28,10 @@ You can get it from "http://www.binaryfortress.com/wordpress-url-rewrite".
 Yes.With WordPress URL Rewrite.
 
 == Changelog ==
+= 1.2 =
+* Fix:the 'is_tag' coludn't identified by the WordPress 3.1.
+* I have not tested in the previous version. 
+
 = 1.1 =
 * Resolved:Some chinese tag can not match correctly still.
 

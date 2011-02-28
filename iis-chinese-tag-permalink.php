@@ -20,7 +20,7 @@ function bossma_get_urf8_pathandurl() {
 //urlencode for chinese tag
 //sometimes preg_match can not match the chinese correctly 
 function bossma_chinese_tag_encode($query){
-	if(is_tag){
+	if(isset($is_tag)&&$is_tag){
 		if($query->query_vars['tag']!=''){
 			$query->query_vars['tag']=urlencode($query->query_vars['tag']);
 		}
