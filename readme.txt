@@ -29,8 +29,7 @@ Yes.With WordPress URL Rewrite.
 
 == Changelog ==
 = 1.2 =
-* Fix:the 'is_tag' coludn't identified by the WordPress 3.1.
-* I have not tested in the previous version. 
+* Fix:the 'is_tag' coludn't identified by the WordPress 3.1.I have not tested in the previous version. 
 
 = 1.1 =
 * Resolved:Some chinese tag can not match correctly still.
@@ -39,6 +38,9 @@ Yes.With WordPress URL Rewrite.
 * This is the first version.
 
 == Upgrade Notice ==
+= 1.2 =
+Re-upload and cover,or online auto upgrade.
+
 = 1.1 =
 Re-upload and cover.
 
