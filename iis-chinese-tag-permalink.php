@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: IIS Chinese Tag Permalink
-Plugin URI: http://blog.bossma.cn/in-iis-wordpress-chinese-tag-permalinks-plugin/
+Plugin URI: http://blog.bossma.cn/php/in-iis-wordpress-chinese-tag-permalinks-plugin/
 Description: In IIS, wordpress use Chinese Tag permalink 
 Author: BOSSMA.CN
 Author URI: http://blog.bossma.cn/
